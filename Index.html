@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amin Mohamed Ahmed - Web Developer Portfolio">
+  <title>Amin Mohamed Ahmed | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #121a2e;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #65e6c4;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #65e6c4;
+    }
+
+    .hero {
+      min-height: 85vh;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      line-height: 1.2;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #65e6c4;
+    }
+
+    .hero p {
+      color: #a8b4ca;
+      max-width: 550px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #65e6c4;
+      color: #0b1020;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .profile {
+      background: #17223a;
+      border: 1px solid #34445e;
+      padding: 35px;
+      border-radius: 20px;
+      text-align: center;
+      min-width: 260px;
+    }
+
+    .avatar {
+      background: #65e6c4;
+      color: #0b1020;
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 auto 20px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      color: #65e6c4;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: #121a2e;
+      border: 1px solid #34445e;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      color: #a8b4ca;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #17223a;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #34445e;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      background: #121a2e;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #34445e;
+    }
+
+    .project h3 {
+      color: #65e6c4;
+      margin-bottom: 10px;
+    }
+
+    .certificate a {
+      color: #65e6c4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #121a2e;
+      color: #a8b4ca;
+    }
+
+    @media (max-width: 750px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">AM.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p>ASPIRING FRONT-END DEVELOPER</p>
+
+        <h1>
+          Hi, I'm Amin.<br>
+          <span>I build for the web.</span>
+        </h1>
+
+        <p>
+          I'm learning front-end development
+          and creating clean, responsive websites
+          for phones and computers.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">AM</div>
+        <h2>Amin Mohamed Ahmed</h2>
+        <p>Responsive Web Designer</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="card">
+        <p>
+          I'm Amin Mohamed Ahmed, an aspiring
+          web developer interested in creating
+          modern and responsive websites.
+          My goal is to become a professional
+          Front-End Developer.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Flexbox</div>
+        <div class="skill">CSS Grid</div>
+        <div class="skill">Responsive Design</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="projects">
+        <div class="project">
+          <h3>Business Website</h3>
+          <p>A modern website for a business.</p>
+        </div>
+
+        <div class="project">
+          <h3>Personal Portfolio</h3>
+          <p>A website introducing my skills.</p>
+        </div>
+
+        <div class="project">
+          <h3>Product Website</h3>
+          <p>A responsive product showcase.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <h2 class="section-title">My Certificate</h2>
+
+      <div class="card">
+        <h3>Responsive Web Design</h3>
+        <p>freeCodeCamp</p>
+        <p>November 11, 2026</p>
+
+        <a
+          href="https://freecodecamp.org/certification/fcc-8974cf2a-880c-4106-9182-588007c0919e/responsive-web-design-v9"
+          target="_blank">
+          Verify My Certificate
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="card">
+        <p>Let's connect and build something great!</p>
+        <p>Email: your-email@example.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Amin Mohamed Ahmed. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
